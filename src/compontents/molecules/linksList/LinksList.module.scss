@@ -1,0 +1,35 @@
+@import "/src/styles/mixings";
+
+.listContainer {
+  width: 100%;
+  &_list {
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    @include breakpoints(mobile) {
+      margin-top: 20px;
+    }
+    @include breakpoints(tablet) {
+      margin-top: 20px;
+    }
+
+    &__item {
+      font-size: 25px;
+    }
+  }
+}
+
+a {
+  color: #281d7a;
+  font-size: 22px;
+  margin-right: 40px;
+}
+
+.icon {
+  font-size: 30px;
+}

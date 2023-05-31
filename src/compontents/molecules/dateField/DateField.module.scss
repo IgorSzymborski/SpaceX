@@ -1,0 +1,16 @@
+@import "/src/styles/mixings";
+
+.dateFieldWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.datePicker {
+  padding: 10px 45px 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #130e3b;
+  font-size: 18px;
+
+  @include breakpoints(laptop) {
+    padding: 5px 25px 5px 5px;
+  }
+}

@@ -1,0 +1,17 @@
+@import "/src/styles/mixings";
+
+.launchDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 20px 50px;
+  width: 100%;
+
+  @include breakpoints(mobile) {
+    padding: 5px 20px;
+  }
+
+  &_detailsWrapper {
+    display: flex;
+  }
+}

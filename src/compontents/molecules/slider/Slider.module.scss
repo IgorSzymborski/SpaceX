@@ -1,0 +1,52 @@
+@import "/src/styles/mixings";
+
+.imgWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  padding: 20px 0 20px 20px;
+
+  @include breakpoints(mobile) {
+    align-content: center;
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    margin: 0;
+  }
+  @include breakpoints(tablet) {
+    align-content: center;
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    margin: 0;
+  }
+  &_img {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    @include breakpoints(mobile) {
+      height: 500px;
+    }
+    @include breakpoints(tablet) {
+      height: 500px;
+    }
+  }
+
+  &_buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    padding: 10px;
+    &__button {
+      font-size: 44px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: #281d7a;
+    }
+  }
+}

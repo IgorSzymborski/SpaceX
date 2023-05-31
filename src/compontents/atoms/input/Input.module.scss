@@ -1,0 +1,11 @@
+@import "/src/styles/mixings";
+
+.input {
+  padding: 10px 45px 10px 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #130e3b;
+  @include breakpoints(laptop) {
+    padding: 5px 20px 5px 5px;
+  }
+}

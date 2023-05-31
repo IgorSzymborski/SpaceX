@@ -1,0 +1,52 @@
+@import "/src/styles/mixings";
+
+.listItem {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(66, 68, 90, 1);
+
+  &_imgWrapper {
+    width: 550px;
+    height: 400px;
+    @include breakpoints(mobile) {
+      width: 100%;
+    }
+
+    @include breakpoints(laptop) {
+      width: 100%;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px 0px rgba(66, 68, 90, 1);
+      @include breakpoints(mobile) {
+        height: 80%;
+      }
+    }
+  }
+  &_detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    &__detailTitle {
+      color: #281d7a;
+      margin: 20px 0;
+
+      @include breakpoints(mobile) {
+        margin: 0;
+      }
+    }
+    &__detail {
+      margin: 0;
+      color: #130e3b;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+}
